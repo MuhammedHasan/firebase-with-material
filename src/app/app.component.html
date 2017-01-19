@@ -1,3 +1,33 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <button type="button"  md-button (click)="login()">
+        Login
+      </button>
+      <button type="button" md-button (click)="logout()">
+        Logout
+      </button>
+      <p>
+        {{ status | json }}
+      </p>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <usk-textbox page="main" field="name"></usk-textbox>
+          <usk-textbox page="main" field="surname"></usk-textbox>
+          <usk-textbox page="main" field="school"></usk-textbox>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="flexDemoContainer">
+  <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
+    <div fxFlex> I'm above on mobile, and left on larger devices. </div>
+    <div fxFlex> I'm below on mobile, and right on larger devices. </div>
+  </div>
+</div> -->
