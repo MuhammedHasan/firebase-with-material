@@ -10,6 +10,7 @@ import {AngularFire, AuthProviders, AuthMethods} from "angularfire2";
 export class AppComponent implements OnInit {
 
   status;
+  editorContent;
 
   constructor(private af: AngularFire) { }
 

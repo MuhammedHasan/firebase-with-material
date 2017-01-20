@@ -1,10 +1,10 @@
-<div class="container">
+<!-- <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <button type="button"  md-button (click)="login()">
+      <button md-raised-button color="primary" (click)="login()">
         Login
       </button>
-      <button type="button" md-button (click)="logout()">
+      <button md-raised-button color="accent" (click)="logout()">
         Logout
       </button>
       <p>
@@ -17,17 +17,28 @@
     <div class="col-md-4">
       <div class="panel panel-default">
         <div class="panel-body">
-          <usk-textbox page="main" field="name"></usk-textbox>
-          <usk-textbox page="main" field="surname"></usk-textbox>
-          <usk-textbox page="main" field="school"></usk-textbox>
+          <usk-text-control page="main" field="name"></usk-text-control>
+          <usk-text-control page="main" field="surname"></usk-text-control>
+          <usk-text-control page="main" field="school"></usk-text-control>
         </div>
       </div>
     </div>
   </div>
-</div>
+</div> -->
 <!-- <div class="flexDemoContainer">
   <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
     <div fxFlex> I'm above on mobile, and left on larger devices. </div>
     <div fxFlex> I'm below on mobile, and right on larger devices. </div>
   </div>
 </div> -->
+<!-- <p>
+  <usk-editable-text page="main" field="name"></usk-editable-text>
+</p> -->
+
+<!--
+<quill-editor [(ngModel)]="editorContent"></quill-editor>
+<div [innerHTML]="editorContent"></div> -->
+
+<!-- <usk-rich-textbox page="main" field="name"></usk-rich-textbox> -->
+
+<usk-editable-rich-text page="main" field="name"></usk-editable-rich-text>

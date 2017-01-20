@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { UskTextControlComponent } from './usk-text-control.component';
+import { UskRichTextboxComponent } from './usk-rich-textbox.component';
 
-describe('UskTextControlComponent', () => {
-  let component: UskTextControlComponent;
-  let fixture: ComponentFixture<UskTextControlComponent>;
+describe('UskRichTextboxComponent', () => {
+  let component: UskRichTextboxComponent;
+  let fixture: ComponentFixture<UskRichTextboxComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ UskTextControlComponent ]
+      declarations: [ UskRichTextboxComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(UskTextControlComponent);
+    fixture = TestBed.createComponent(UskRichTextboxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

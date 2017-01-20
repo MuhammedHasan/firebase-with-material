@@ -1,0 +1,7 @@
+<md-input-container dividerColor="primary">
+  <input md-input
+    [id]="field"
+    [placeholder]="field"
+    [ngModel]="text?.$value"
+    (ngModelChange)="update($event)">
+</md-input-container>
